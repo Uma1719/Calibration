@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RetryFailedTestSuite" verbose="1">
+
+	<listeners>
+		<listener class-name="Analyzer.MyTransformer" />
+	</listeners>
+
+	<test name="RetryMulitpleFailedTestCases">
+		<classes>
+			<class name="com.testcases.LoginPageTest"></class>
+			<class name="com.testcases.Build_iQapturePageTest"></class>
+			<class name="com.testcases.Build_ProjectsPageTest"></class>
+			<class name="com.testcases.Build_TemplatesPageTest"></class>
+			<class name="com.testcases.TrackPageTest"></class>
+			<class name="com.testcases.RiskRegisterPageTest"></class>
+			<class name="com.testcases.CompaniesPageTest"></class>
+			<class name="com.testcases.AnalysePageTest"></class>
+			<class name="com.testcases.DashBoardPageTest"></class>
+			<class name="com.testcases.SettingsPageTest"></class>
+		</classes>
+	</test>
+</suite>
